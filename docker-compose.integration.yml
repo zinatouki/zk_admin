@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+  admin:
+    container_name: zk_admin
+    build: .
+    command: bash -c 'foreman start -f Procfile.dev'
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/webapps/admin:rw
+    env_file:
+      - .env.dev
