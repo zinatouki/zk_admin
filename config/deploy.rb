@@ -2,7 +2,7 @@
 lock "3.8.2"
 
 set :application, 'app'
-set :repo_url, 'git@github.com:healthydreamers/hd_admin.git'
+set :repo_url, 'git@github.com:zinatouki/zk_admin.git'
 set :deploy_to, '/home/deploy/apps/admin'
 
 append :linked_files, 'config/database.yml', 'config/application.yml', 'config/secrets.yml'
